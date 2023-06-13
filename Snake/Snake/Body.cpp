@@ -1,31 +1,31 @@
 #include "Body.h"
 #include "ConsoleEngineCore.h"
+#include "Value.h"
 Body::Body() 
 {
 	this->SetChar('B');
-	this->SetPos({ 2, 2});
-	
+	this->SetPos(RandomPos());
 }
 
 Body::~Body() 
 {
 }
 
-//int4 Body::RandomPos()
-//{
-//	
-//	int4 result;
-//	//??.,, 그러게
-//	int x = rand() % ConsoleEngineCore::Screen.GetScale().X; 
-//
-//	int y = rand() % ConsoleEngineCore::Screen.GetScale().Y;
-//
-//	result.X = x;
-//	result.Y = y;
-//	
-//	
-//
-//	return result;
-//	
-//}
+int4 Body::RandomPos()
+{
+	
+	int4 result;
+	//??.,, 그러게
+	int x = rand() % Value::ScreenSize.X; 
+
+	int y = rand() % Value::ScreenSize.Y;
+
+	result.X = x;
+	result.Y = y;
+	
+	
+
+	return result;
+	
+}
 

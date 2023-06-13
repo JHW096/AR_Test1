@@ -55,19 +55,18 @@ void Head::Tick(float _Time)
     }
     SetPrevPos({ GetPos().X - MovePos.X, GetPos().Y - MovePos.Y });
  
-    ConsoleObject* part = nullptr;
+    /*ConsoleObject* part = nullptr;
     for (auto& e : ConsoleEngineCore::GetList())
     {
         if (e->GetChar() == 'B')
         {
-            ConsoleEngineCore::GetList().remove(e);
             part = ConsoleEngineCore::CreateObject<Body>();
             break;
         }
     }
     
 
-    SetNext(dynamic_cast<Part*>(part));
+    SetNext(dynamic_cast<Part*>(part));*/
     
     
     

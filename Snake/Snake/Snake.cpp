@@ -5,16 +5,16 @@
 #include "ConsoleEngineCore.h"
 #include "Head.h"
 #include "Body.h"
+#include "Value.h"
 
 int main()
 {
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-    ConsoleEngineCore::CreateObject<Body>();
     ConsoleEngineCore::CreateObject<Head>();
-    
+    ConsoleEngineCore::CreateObject<Body>();
 
     // 이 함수만은 무조건 존재해야 합니다.
-    ConsoleEngineCore::EngineStart(int4{5, 5});
+    ConsoleEngineCore::EngineStart(Value::ScreenSize);
     ConsoleEngineCore::DeleteObject();
 }

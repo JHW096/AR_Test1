@@ -27,6 +27,7 @@
     <ClCompile Include="Head.cpp" />
     <ClCompile Include="Part.cpp" />
     <ClCompile Include="Snake.cpp" />
+    <ClCompile Include="Value.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Body.h" />
@@ -36,6 +37,7 @@
     <ClInclude Include="ConsoleScreen.h" />
     <ClInclude Include="Head.h" />
     <ClInclude Include="Part.h" />
+    <ClInclude Include="Value.h" />
     <ClInclude Include="테스트제한사항.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -33,6 +33,7 @@
     <ClCompile Include="Snake.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
+    <ClCompile Include="Value.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Body.h">
@@ -59,5 +60,6 @@
     <ClInclude Include="테스트제한사항.h">
       <Filter>Engine</Filter>
     </ClInclude>
+    <ClInclude Include="Value.h" />
   </ItemGroup>
 </Project>
